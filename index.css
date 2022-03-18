@@ -40,6 +40,7 @@
   height: 50px;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
+  border-radius: 50%;
 }
 
 .quiz__image:hover {
@@ -47,7 +48,7 @@
 }
 
 .quiz__body {
-  padding: 20px 20px 0 20px;
+  padding: 0 20px;
 }
 
 .quiz__option-list {
@@ -57,7 +58,7 @@
 }
 
 .quiz__option {
-  margin: 5px 0;
+  margin: 7px 0;
 }
 
 .quiz__option-text {
