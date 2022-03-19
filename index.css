@@ -17,6 +17,7 @@
   width: 500px;
   height: 300px;
   box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+  position: relative;
 }
 
 .quiz__header {
@@ -132,8 +133,8 @@
   display: none;
   overflow: hidden;
   position: absolute;
-  left: 691px;
-  bottom: 314px;
+  left: 68%;
+  bottom: 42%;
 }
 
 .popup_opened {
