@@ -94,7 +94,9 @@
   top: calc(50% - 142px);
   left: calc(50% - 250px);
   display: none;
+  box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
 }
+
 
 .result_opened {
   display: flex;
@@ -141,3 +143,31 @@
   display: flex;
 }
 
+@media screen and (max-width: 540px) {
+  .quiz {
+    width: 360px;
+    height: 360px;
+  }
+
+  .result {
+    width: 360px;
+    height: 360px;
+    top: calc(50% - 172px);
+    left: calc(50% - 180px);
+  }
+
+  .quiz__header {
+    flex-direction: column;
+    height: 90px;
+  }
+
+  .popup {
+    left: 24%;
+    bottom: 64%;
+  }
+
+  .quiz__question {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+}

@@ -23,7 +23,7 @@ const questionsArr = [
   },
   {
     question: "Кто из этих актрис имеет в коллекции два оскара?",
-    image: "./images/oscar.jpg",
+    image: "./images/oscars.jpeg",
     options: {
       a: "Фрэнсис Макдорманд",
       b: "Кейт Уинслет",
