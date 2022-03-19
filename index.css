@@ -41,6 +41,7 @@
   transition: all 0.3s ease-in-out;
   cursor: pointer;
   border-radius: 50%;
+  object-fit:cover;
 }
 
 .quiz__image:hover {
@@ -122,3 +123,20 @@
 .result__restart:hover {
   background-color: #f7b39d;
 }
+
+.popup {
+  width: 200px;
+  height: 200px;
+  border: 3px solid #006C84;
+  border-radius: 10px;
+  display: none;
+  overflow: hidden;
+  position: absolute;
+  left: 691px;
+  bottom: 314px;
+}
+
+.popup_opened {
+  display: flex;
+}
+
