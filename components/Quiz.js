@@ -2,7 +2,8 @@ export default class Quiz {
   constructor(quizElement, imageElement) {
     this._questionElement = quizElement.querySelector('.quiz__question');
     this._imageElement = imageElement;
-    this._inputs = quizElement.querySelectorAll('.quiz__option');
+    this._inputs = quizElement.querySelectorAll('.quiz__input');
+    this._labels = quizElement.querySelectorAll('.quiz__option-text');
     this._labelA = quizElement.querySelector('.quiz__option-text_a');
     this._labelB = quizElement.querySelector('.quiz__option-text_b');
     this._labelC = quizElement.querySelector('.quiz__option-text_c');

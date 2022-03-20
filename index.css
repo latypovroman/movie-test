@@ -57,14 +57,37 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: strech;
 }
 
 .quiz__option {
-  margin: 7px 0;
+  display: block;
+}
+
+.quiz__input {
+  display: none;
+}
+
+.quiz__input:checked + .quiz__option-text {
+	background: #edac97;
+}
+
+.quiz__option-text:hover {
+	color: #666;
 }
 
 .quiz__option-text {
   font-weight: bold;
+  display: block;
+	cursor: pointer;
+	border: 1px solid #999;
+	border-radius: 6px;
+	user-select: none;
+  margin-bottom: 5px;
+  width: 50%;
+  padding: 3px 0 3px 3px;
 }
 
 .quiz__submit {
@@ -169,5 +192,9 @@
   .quiz__question {
     text-align: center;
     margin-bottom: 5px;
+  }
+
+  .quiz__option-text {
+    width: 90%;
   }
 }

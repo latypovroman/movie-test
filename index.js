@@ -19,6 +19,7 @@ const popup = new Popup(popupElement);
 
 submitButton.addEventListener('click', () => {
   quiz.checkAnswer({changeScore: (id) => {
+
     id === questionsArr[quizCounter].options.correct ? score++ : console.log(score);
   }
 });
