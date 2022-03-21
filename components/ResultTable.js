@@ -16,4 +16,6 @@ export default class ResultTable {
   _getResultText(score, quizLength) {
     this._resultText.textContent = `Викторина пройдена! Вы ответили верно на ${score} из ${quizLength} вопросов!`
   }
+
+
 }

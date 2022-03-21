@@ -1,0 +1,22 @@
+.popup {
+  width: 200px;
+  height: 200px;
+  border: 3px solid #006C84;
+  border-radius: 10px;
+  display: none;
+  overflow: hidden;
+  position: absolute;
+  left: 68%;
+  bottom: 42%;
+}
+
+.popup_opened {
+  display: flex;
+}
+
+@media screen and (max-width: 540px) {
+  .popup {
+    left: 24%;
+    bottom: 64%;
+  }
+}

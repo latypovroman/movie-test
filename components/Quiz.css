@@ -1,0 +1,125 @@
+.quiz {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #E2E8E4;
+  border-radius: 7px;
+  width: 500px;
+  height: 300px;
+  box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+  position: relative;
+}
+
+.quiz_dark {
+  background-color: #b2c5c7;
+}
+
+.quiz__header {
+  padding: 20px 20px 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+}
+
+.quiz__question {
+  font-size: 16px;
+  line-height: 0.9rem;
+  font-weight: normal;
+  margin: 0;
+  font-weight: bold;
+}
+
+.quiz__image {
+  width: 50px;
+  height: 50px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  border-radius: 50%;
+  object-fit:cover;
+}
+
+.quiz__image:hover {
+  transform: scale(1.15);
+}
+
+.quiz__body {
+  padding: 0 20px;
+}
+
+.quiz__option-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: strech;
+}
+
+.quiz__option {
+  display: block;
+}
+
+.quiz__input {
+  display: none;
+}
+
+.quiz__input:checked + .quiz__option-text {
+	background: #edac97;
+}
+
+.quiz__option-text:hover {
+	color: #666;
+}
+
+.quiz__option-text {
+  font-weight: bold;
+  display: block;
+	cursor: pointer;
+	border: 1px solid #999;
+	border-radius: 6px;
+	user-select: none;
+  margin-bottom: 5px;
+  width: 50%;
+  padding: 3px 0 3px 3px;
+}
+
+.quiz__submit {
+  font-weight: bold;
+  font-size: 18px;
+  width: 100%;
+  background-color: #FFCCBB;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-family: 'Nunito', sans-serif;
+  padding: 10px;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  transition: all 0.3s ease-in-out;
+}
+
+.quiz__submit:hover {
+  background-color: #f7b39d;
+}
+
+@media screen and (max-width: 540px) {
+  .quiz {
+    width: 360px;
+    height: 360px;
+  }
+
+  .quiz__header {
+    flex-direction: column;
+    height: 90px;
+  }
+
+  .quiz__question {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .quiz__option-text {
+    width: 90%;
+  }
+}
